@@ -8,11 +8,15 @@ from jar_progress import visualize
 import streamlit.components.v1 as components
 import time
 import gspread
+import pytz
 import datetime
 
 #####################################
 # FUNCTIONS
 #####################################
+
+BORDER_COLOR = "rgba(239, 245, 255, 0.69)"
+BG_COLOR = "rgba(14, 17, 23, 1)"
 
 # Function to generate HTML for a single card with a title and a static statistic number
 def generate_card_html(title, statistic, card_id):
@@ -194,7 +198,7 @@ if __name__ == "__main__":
     st.divider()
 
     st.write("<h5>Select action</h5>", unsafe_allow_html=True)
-    option = st.selectbox(
+    edit_option = st.selectbox(
             "",
             (
                 add,
@@ -206,27 +210,60 @@ if __name__ == "__main__":
     
     st.write("")
 
-    if option == add:
+    if edit_option == add:
         with st.form(key="form_add"):
             st.write("<h5>New Entry Title</h5>", unsafe_allow_html=True)
             title = st.text_input("Class", label_visibility="collapsed")
             st.write("<h5>Content</h5>", unsafe_allow_html=True)
             content = st.text_input(f"What would you like to know about?", placeholder="Type here ...", label_visibility="collapsed")
             start_co, end_co = st.columns(2)
+
+            # Get current date and time
+            now = datetime.datetime.now()
+
+            # Round down the current time to the nearest hour
+            start_time_default = now.replace(minute=0, second=0, microsecond=0)
+
+            # Calculate end date and time (start time + 1 hour)
+            end_time_default = start_time_default + datetime.timedelta(hours=1)
+            end_date_and_time = end_time_default
+
             with start_co:
-                start_date = st.date_input("Start date", datetime.date(2021, 1, 1))
+                # Set the start date and time inputs with defaults to today and the current hour
+                start_date = st.date_input("Start date", now.date(), format="MM/DD/YYYY", key="start_date")
+                start_time = st.time_input("Start time", start_time_default, key="start_time")
+
+                start_date_and_time = datetime.datetime.combine(start_date, start_time)
+
             with end_co:
-                end_date = st.date_input("End date", datetime.date(2021, 12, 31))
+                # Set the end date and time inputs with defaults based on the calculated end date and time
+                end_date = st.date_input("End date", end_date_and_time.date(), key="end_date", format="MM/DD/YYYY")
+                end_time = st.time_input("End time", end_date_and_time.time(), key="end_time")
+
+                end_date_and_time = datetime.datetime.combine(end_date, end_time)
+
             submit_button = st.form_submit_button(label="Submit")
 
-    elif option == edit:
+            # get a json serializable string of the start date and time
+            start_date_and_time = start_date_and_time.replace(tzinfo=pytz.utc)
+            start_date_and_time_str = start_date_and_time.isoformat()
+            end_date_and_time = end_date_and_time.replace(tzinfo=pytz.utc)
+            end_date_and_time_str = end_date_and_time.isoformat()
+
+            if submit_button:
+                jar_commit(selected_database_id, title, content, start_date_and_time_str, end_date_and_time_str)
+                st.success("Entry added successfully!", icon="✅")
+
+    elif edit_option == edit:
+
+        get_jar_ledger_as_pd(selected_database_id)
+
+        # get the tuple of the title column 
+        title_tuple = tuple(df["Title"])
+        
         form_delete = st.selectbox(
             "Select entry to edit",
-            (
-                "Entry 1",
-                "Entry 2",
-                "Entry 3",
-            ),
+            title_tuple,
             label_visibility="collapsed",
         )
          
@@ -244,14 +281,22 @@ if __name__ == "__main__":
                 end_date = st.date_input("End date", datetime.date(2021, 12, 31))
             submit_button = st.form_submit_button(label="Save")
 
-    elif option == delete:
+    elif edit_option == delete:
+
+        get_jar_ledger_as_pd(selected_database_id)
+
+        # get the tuple of the title column 
+        title_tuple = tuple(df["Title"])
+        
         form_delete = st.selectbox(
             "Select entry to delete",
-            (
-                "Entry 1",
-                "Entry 2",
-                "Entry 3",
-            ),
+            title_tuple,
             label_visibility="collapsed",
         )
         button_delete = st.button("Delete")
+
+        if button_delete:
+            page_id = df[df["Title"] == form_delete]["Page Id"].values[0]
+            delete_clip_using_page_id(page_id)
+
+            st.success("Entry deleted successfully!", icon="✅")

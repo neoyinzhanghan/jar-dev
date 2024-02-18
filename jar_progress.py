@@ -27,7 +27,7 @@ def plot_grads_with_top_extended_boundaries_fixed(grads, starting_jar_dim=4, a=5
         starting_jar_dim += 1
 
     while len(grads) < starting_jar_dim**2:
-        grads.append(0)
+        grads.append(0.1)
 
     normalized_grads = grads
     
