@@ -76,7 +76,7 @@ def create_clip_from_event_id(event_id):
 
     clip = jar_commit(database_id=database_id,
                 title=title,
-                content="",
+                content="NA",
                 start_time=start_time,
                 end_time=end_time
                 )

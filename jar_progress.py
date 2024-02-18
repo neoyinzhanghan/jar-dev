@@ -3,7 +3,7 @@ import numpy as np
 from math import exp, log
 from matplotlib import pyplot as plt
 
-def gradient_fn(x, a=5, b=15, min_grad=0.2):
+def gradient_fn(x, a=5, b=15, min_grad=0.35):
 
     # apply the logistic function to input x
     return max(1 / (1 + exp(a - (x / b))), min_grad)

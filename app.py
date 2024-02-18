@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 import time
 import gspread
 import pytz
-from datetime import datetime
+import datetime
 
 #####################################
 # FUNCTIONS
@@ -31,7 +31,7 @@ def calculate_average_entries_per_week(data):
     weeks = max(1, delta.days / 7)
     average_entries_per_week = len(start_times) / weeks
     
-    return average_entries_per_week
+    return round(average_entries_per_week, 2)
 
 # Function to generate HTML for a single card with a title and a static statistic number
 def generate_card_html(title, statistic, card_id):
@@ -68,9 +68,9 @@ if __name__ == "__main__":
 
         st.divider()
 
-        st.button("Neo's JAR", use_container_width=True, type="primary")
+        st.button("Neo's JARs", use_container_width=True, type="primary")
 
-        st.button("Ryusei's JAR", use_container_width=True)
+        st.button("Ryusei's JARs", use_container_width=True)
 
         stoggle("About us", f"✨ We are a team of UC Berkeley students who are passionate about AI education: Neo (PhD in Statistics) and Ryusei (Political Science at Berkeley). We built Just Attempt Record (JAR) on February 16, 2024, to help PhD researchers and professors produce knowledge faster by accelerating the inquiry and experimentation cycles!")
 
@@ -174,6 +174,10 @@ if __name__ == "__main__":
     selected_database_id = jar_dct[option]["database_id"]
     df = get_jar_ledger_as_pd(selected_database_id)
     df = process_df(df)
+
+    with st.spinner('Syncing, please wait...'):
+        sync(selected_database_id) 
+
     total_entries = get_num_entries(df)
     average_entries_per_week = calculate_average_entries_per_week(df)
 
