@@ -17,6 +17,9 @@ def create_jar(title):
         for jar in jars["jars"]:
             if jar['title'] == title:
                 jar['calendar_id'] = calendar_id
+
+                # add clips which is an empty list to the new JAR
+                jar['clips'] = []
                 break
     
     # write the updated jars.json file
@@ -313,6 +316,5 @@ def get_jar_ledger_as_pd(database_id):
     return df
 
 if __name__ == '__main__':
-    # create_jar("Testing for Ryusei Demo")
-    database_id = get_database_id_from_title("Testing for Ryusei Demo")
-    print(get_jar_ledger_as_pd(database_id))
+
+    create_jar("Clip Jar SkyDeck Application")

@@ -98,6 +98,6 @@ def sync(database_id):
     sync_all_times(database_id)
 
 if __name__ == "__main__":
-    sync("5d5f91b2-48ff-4656-9cc5-f0508bec0abc")
-    sync("3631f666913542f0bb613f0c591132d2")
+    sync("e9ea5456-b271-473a-be6d-9ba0b472a5ef")
+    sync("4e91c1e4-b9d5-4731-b477-538634b52f12")
 

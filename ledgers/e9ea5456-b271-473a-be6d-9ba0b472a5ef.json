@@ -1,0 +1,1264 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "00d4deee-532c-441a-941b-44482de841d8",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:33:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-16T01:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-16T02:15:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Inspecting data collection outcomes and sanity checking",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Inspecting data collection outcomes and sanity checking",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Inspecting-data-collection-outcomes-and-sanity-checking-00d4deee532c441a941b44482de841d8",
+            "public_url": "https://foam-salamander-68d.notion.site/Inspecting-data-collection-outcomes-and-sanity-checking-00d4deee532c441a941b44482de841d8"
+        },
+        {
+            "object": "page",
+            "id": "fb53bd88-ddbd-47ba-af37-9d53632fb8e9",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:33:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-14T19:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-14T23:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Collecting LLv4 BMA Data",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Collecting LLv4 BMA Data",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Collecting-LLv4-BMA-Data-fb53bd88ddbd47baaf379d53632fb8e9",
+            "public_url": "https://foam-salamander-68d.notion.site/Collecting-LLv4-BMA-Data-fb53bd88ddbd47baaf379d53632fb8e9"
+        },
+        {
+            "object": "page",
+            "id": "66a85877-2503-4c81-af96-bfdea47e650e",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:33:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-05T00:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-05T03:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Jotting down details of cell spatial statistics metrics",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Jotting down details of cell spatial statistics metrics",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Jotting-down-details-of-cell-spatial-statistics-metrics-66a8587725034c81af96bfdea47e650e",
+            "public_url": "https://foam-salamander-68d.notion.site/Jotting-down-details-of-cell-spatial-statistics-metrics-66a8587725034c81af96bfdea47e650e"
+        },
+        {
+            "object": "page",
+            "id": "fc811055-95a8-4159-9de3-61fee15bb6aa",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:33:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-04T00:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-04T03:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Debugging region classification",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Debugging region classification",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Debugging-region-classification-fc81105595a841599de361fee15bb6aa",
+            "public_url": "https://foam-salamander-68d.notion.site/Debugging-region-classification-fc81105595a841599de361fee15bb6aa"
+        },
+        {
+            "object": "page",
+            "id": "4b684ef5-1cfe-44a9-871e-c305e9a0f0d9",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:33:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-03T18:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-03T21:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Inspecting poor region classification results and inspecting bugs",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Inspecting poor region classification results and inspecting bugs",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Inspecting-poor-region-classification-results-and-inspecting-bugs-4b684ef51cfe44a9871ec305e9a0f0d9",
+            "public_url": "https://foam-salamander-68d.notion.site/Inspecting-poor-region-classification-results-and-inspecting-bugs-4b684ef51cfe44a9871ec305e9a0f0d9"
+        },
+        {
+            "object": "page",
+            "id": "6a656203-8311-4f72-886e-f212f6ea1f32",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:33:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-02T21:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-02T23:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "ResNet Magnification Ablation Experiment Results",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "ResNet Magnification Ablation Experiment Results",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/ResNet-Magnification-Ablation-Experiment-Results-6a65620383114f72886ef212f6ea1f32",
+            "public_url": "https://foam-salamander-68d.notion.site/ResNet-Magnification-Ablation-Experiment-Results-6a65620383114f72886ef212f6ea1f32"
+        },
+        {
+            "object": "page",
+            "id": "81cbf3be-f062-41ea-a23c-dd4aaedbab8b",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-02T16:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-02T18:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Wrapping up the bone marrow deepheme pipeline",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Wrapping up the bone marrow deepheme pipeline",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Wrapping-up-the-bone-marrow-deepheme-pipeline-81cbf3bef06241eaa23cdd4aaedbab8b",
+            "public_url": "https://foam-salamander-68d.notion.site/Wrapping-up-the-bone-marrow-deepheme-pipeline-81cbf3bef06241eaa23cdd4aaedbab8b"
+        },
+        {
+            "object": "page",
+            "id": "0b7b3a4e-191e-4d08-9caa-a6ce74f0603a",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-01T21:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-01T22:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Learning from Jeremy & Genentech architecture",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Learning from Jeremy & Genentech architecture",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Learning-from-Jeremy-Genentech-architecture-0b7b3a4e191e4d089caaa6ce74f0603a",
+            "public_url": "https://foam-salamander-68d.notion.site/Learning-from-Jeremy-Genentech-architecture-0b7b3a4e191e4d089caaa6ce74f0603a"
+        },
+        {
+            "object": "page",
+            "id": "e0a40c87-6b16-402a-b97a-a4a560b4728d",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-02T00:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-02T08:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Clearing through the region classification pipeline with distributed processing",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Clearing through the region classification pipeline with distributed processing",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Clearing-through-the-region-classification-pipeline-with-distributed-processing-e0a40c876b16402ab97aa4a560b4728d",
+            "public_url": "https://foam-salamander-68d.notion.site/Clearing-through-the-region-classification-pipeline-with-distributed-processing-e0a40c876b16402ab97aa4a560b4728d"
+        },
+        {
+            "object": "page",
+            "id": "d3187f46-2cab-4280-958c-141056975c3b",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-01T18:15:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-01T21:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Debugging region classifier integration",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Debugging region classifier integration",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Debugging-region-classifier-integration-d3187f462cab4280958c141056975c3b",
+            "public_url": "https://foam-salamander-68d.notion.site/Debugging-region-classifier-integration-d3187f462cab4280958c141056975c3b"
+        },
+        {
+            "object": "page",
+            "id": "270c808f-e428-42eb-b043-78b6cd65fd5b",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-31T22:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-31T23:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Brainstorming ideas for cell spatial relationship",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Brainstorming ideas for cell spatial relationship",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Brainstorming-ideas-for-cell-spatial-relationship-270c808fe42842ebb04378b6cd65fd5b",
+            "public_url": "https://foam-salamander-68d.notion.site/Brainstorming-ideas-for-cell-spatial-relationship-270c808fe42842ebb04378b6cd65fd5b"
+        },
+        {
+            "object": "page",
+            "id": "cdde2fc7-07c8-47fc-b995-7a302391b16a",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-31T16:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-31T22:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Focus Regions RAM Issues",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Focus Regions RAM Issues",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Focus-Regions-RAM-Issues-cdde2fc707c847fcb9957a302391b16a",
+            "public_url": "https://foam-salamander-68d.notion.site/Focus-Regions-RAM-Issues-cdde2fc707c847fcb9957a302391b16a"
+        },
+        {
+            "object": "page",
+            "id": "dfd6c5f3-2db8-4387-ab28-ba9b2879a4ef",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-29T18:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-29T19:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Checking YOLOv8 results",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Checking YOLOv8 results",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Checking-YOLOv8-results-dfd6c5f32db84387ab28ba9b2879a4ef",
+            "public_url": "https://foam-salamander-68d.notion.site/Checking-YOLOv8-results-dfd6c5f32db84387ab28ba9b2879a4ef"
+        },
+        {
+            "object": "page",
+            "id": "4f8d58bf-ebbf-4e2d-9457-828b7ee80c92",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-26T03:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-26T03:45:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Training YOLOv8",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Training YOLOv8",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Training-YOLOv8-4f8d58bfebbf4e2d9457828b7ee80c92",
+            "public_url": "https://foam-salamander-68d.notion.site/Training-YOLOv8-4f8d58bfebbf4e2d9457828b7ee80c92"
+        },
+        {
+            "object": "page",
+            "id": "a3bf4a55-71be-435a-857a-80bf0249b240",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-23T18:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-23T20:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Thoughts on handling focus regions",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Thoughts on handling focus regions",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Thoughts-on-handling-focus-regions-a3bf4a5571be435a857a80bf0249b240",
+            "public_url": "https://foam-salamander-68d.notion.site/Thoughts-on-handling-focus-regions-a3bf4a5571be435a857a80bf0249b240"
+        },
+        {
+            "object": "page",
+            "id": "07a7b1c8-ffd8-4b0c-8611-2fc8169d9e5c",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-24T17:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-24T20:15:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Conformal prediction grind",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Conformal prediction grind",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Conformal-prediction-grind-07a7b1c8ffd84b0c86112fc8169d9e5c",
+            "public_url": "https://foam-salamander-68d.notion.site/Conformal-prediction-grind-07a7b1c8ffd84b0c86112fc8169d9e5c"
+        },
+        {
+            "object": "page",
+            "id": "c37e8e67-ce0d-46eb-bd0c-ee01a6d1892c",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-25T23:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-26T03:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Deploying existing region classification checkpoint",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Deploying existing region classification checkpoint",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Deploying-existing-region-classification-checkpoint-c37e8e67ce0d46ebbd0cee01a6d1892c",
+            "public_url": "https://foam-salamander-68d.notion.site/Deploying-existing-region-classification-checkpoint-c37e8e67ce0d46ebbd0cee01a6d1892c"
+        },
+        {
+            "object": "page",
+            "id": "2d8a23ff-4a0b-45fc-83c3-8f05c9c94cd9",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-25T23:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-25T23:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Inspecting existing model checkpoints",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Inspecting existing model checkpoints",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Inspecting-existing-model-checkpoints-2d8a23ff4a0b45fc83c38f05c9c94cd9",
+            "public_url": "https://foam-salamander-68d.notion.site/Inspecting-existing-model-checkpoints-2d8a23ff4a0b45fc83c38f05c9c94cd9"
+        },
+        {
+            "object": "page",
+            "id": "d2f9e824-fea2-4fae-976a-1eb16e3498e5",
+            "created_time": "2024-02-18T21:32:00.000Z",
+            "last_edited_time": "2024-02-18T21:32:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "I%3BKX",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-24T16:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "%7B%3BcV",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-01-24T17:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Solving some problems with LLv3",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Solving some problems with LLv3",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Solving-some-problems-with-LLv3-d2f9e824fea24fae976a1eb16e3498e5",
+            "public_url": "https://foam-salamander-68d.notion.site/Solving-some-problems-with-LLv3-d2f9e824fea24fae976a1eb16e3498e5"
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "888c628c-71b5-42da-bf92-06755f49b73c"
+}

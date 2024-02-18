@@ -1,100 +1,173 @@
 {
     "jars": [
         {
-            "title": "Testing for Ryusei Demo",
-            "database_id": "5d5f91b2-48ff-4656-9cc5-f0508bec0abc",
-            "public_url": "https://www.notion.so/5d5f91b248ff46569cc5f0508bec0abc",
-            "calendar_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com",
+            "title": "LeukoLocatorV4 BMACounter Dev",
+            "database_id": "e9ea5456-b271-473a-be6d-9ba0b472a5ef",
+            "public_url": "https://www.notion.so/e9ea5456b271473abe6d9ba0b472a5ef",
+            "calendar_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com",
             "clips": [
                 {
-                    "page_id": "f28dc24a-d2d4-4a44-8db8-f8e9328048ea",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/Trying-out-manual-entry-f28dc24ad2d44a448db8f8e9328048ea",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----pmvblhcdm1jl9ggt7a2vhm9hr4"
+                    "page_id": "d2f9e824-fea2-4fae-976a-1eb16e3498e5",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Solving-some-problems-with-LLv3-d2f9e824fea24fae976a1eb16e3498e5",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----ekkuqj079kbl2cqgmq7paq1m98"
                 },
                 {
-                    "page_id": "a23d8613-93a5-4a99-a990-85ac1447ba1b",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/Another-test-event-a23d861393a54a99a99085ac1447ba1b",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----lb6i61tr7gfn13mhabbm9ljcj4"
+                    "page_id": "2d8a23ff-4a0b-45fc-83c3-8f05c9c94cd9",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Inspecting-existing-model-checkpoints-2d8a23ff4a0b45fc83c38f05c9c94cd9",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----acgvo7tap7sm1nodneplud1c3g"
                 },
                 {
-                    "page_id": "2910f91c-fd03-42ce-aad0-c7e592ee66de",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/ahahahahahah-2910f91cfd0342ceaad0c7e592ee66de",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----p28itoq7bga3tpqni9ilt7cps0"
+                    "page_id": "c37e8e67-ce0d-46eb-bd0c-ee01a6d1892c",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Deploying-existing-region-classification-checkpoint-c37e8e67ce0d46ebbd0cee01a6d1892c",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----29f3ej2efcp3u60jdc6o3tklvg"
                 },
                 {
-                    "page_id": "e4e495fb-5077-44d2-923f-95eebbe4a62e",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/pizza-time-e4e495fb507744d2923f95eebbe4a62e",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----62b346o0mv6qi52e1alca08kjo"
+                    "page_id": "07a7b1c8-ffd8-4b0c-8611-2fc8169d9e5c",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Conformal-prediction-grind-07a7b1c8ffd84b0c86112fc8169d9e5c",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----t1saep9bc8q5sg7e8gc2l8no9o"
                 },
                 {
-                    "page_id": "f20cc26f-8a1f-4d0c-8e46-c7d2ed8c66a6",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/donut-time-f20cc26f8a1f4d0c8e46c7d2ed8c66a6",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----vpu86v5cfctmdh1ssb9ptov8nk"
+                    "page_id": "a3bf4a55-71be-435a-857a-80bf0249b240",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Thoughts-on-handling-focus-regions-a3bf4a5571be435a857a80bf0249b240",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----1h54a37qn4sgdkchip9tdhachg"
                 },
                 {
-                    "page_id": "ac5a7f4c-9f50-48a1-8289-62db3e74fba0",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/test-test-test-ac5a7f4c9f5048a1828962db3e74fba0",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----mn1h5d1f8i6ca8pqtd3h4kjje4"
+                    "page_id": "4f8d58bf-ebbf-4e2d-9457-828b7ee80c92",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Training-YOLOv8-4f8d58bfebbf4e2d9457828b7ee80c92",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----pkbihniu4f4c51gdv4dv0qbpes"
                 },
                 {
-                    "page_id": "942d587a-fdb0-45cf-a1f2-09d8b57e193c",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/hello-world-942d587afdb045cfa1f209d8b57e193c",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----pd26rei908pnvntnoansj9ks54"
+                    "page_id": "dfd6c5f3-2db8-4387-ab28-ba9b2879a4ef",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Checking-YOLOv8-results-dfd6c5f32db84387ab28ba9b2879a4ef",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----gs3jojcejp0od5ja5mladgsit0"
                 },
                 {
-                    "page_id": "6d86dd54-46a8-42e8-a13b-805626fc6c8a",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/yoyoyo-6d86dd5446a842e8a13b805626fc6c8a",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----i3dr8ve1f1klb2n3ldcj43id08"
+                    "page_id": "cdde2fc7-07c8-47fc-b995-7a302391b16a",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Focus-Regions-RAM-Issues-cdde2fc707c847fcb9957a302391b16a",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----a61bfhh0c67argh4ildhbnnhvo"
                 },
                 {
-                    "page_id": "9e1ecd6c-dc3a-4a3e-9f39-4fe2a425d763",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/some-work-9e1ecd6cdc3a4a3e9f394fe2a425d763",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----f8i8ioju0fq87dna3i8usf3sk0"
+                    "page_id": "270c808f-e428-42eb-b043-78b6cd65fd5b",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Brainstorming-ideas-for-cell-spatial-relationship-270c808fe42842ebb04378b6cd65fd5b",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----5j71jfjcldgn50rp9ied33vei0"
                 },
                 {
-                    "page_id": "c1c41ac9-3f79-4369-91bd-6b20d17f328f",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/doing-some-study-c1c41ac93f79436991bd6b20d17f328f",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----2r386l9su41uvsu32fosq0eogg"
+                    "page_id": "d3187f46-2cab-4280-958c-141056975c3b",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Debugging-region-classifier-integration-d3187f462cab4280958c141056975c3b",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----ha4f89ftqbkc58tth2dio9kffg"
                 },
                 {
-                    "page_id": "861ecb7c-f113-4abf-b5ac-c8cabf4fb145",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/marketing-861ecb7cf1134abfb5acc8cabf4fb145",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----fornfbm1l623k63cvi1tt4f3mk"
+                    "page_id": "e0a40c87-6b16-402a-b97a-a4a560b4728d",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Clearing-through-the-region-classification-pipeline-with-distributed-processing-e0a40c876b16402ab97aa4a560b4728d",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----7tl7mahdcpvcqv1u0mldu59auc"
                 },
                 {
-                    "page_id": "45795438-f46a-4035-a8f1-458ed5d2011d",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/user-interview-45795438f46a4035a8f1458ed5d2011d",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----e61u00t6acksn6chkoc70nom88"
+                    "page_id": "0b7b3a4e-191e-4d08-9caa-a6ce74f0603a",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Learning-from-Jeremy-Genentech-architecture-0b7b3a4e191e4d089caaa6ce74f0603a",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----si53tavaca88pb3nhqaapgp2bk"
                 },
                 {
-                    "page_id": "b87a6265-721d-40da-bcc7-67ccb8484773",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/emailing-Obama-b87a6265721d40dabcc767ccb8484773",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----l3ig5g85lr11belp9sngk027c8"
+                    "page_id": "81cbf3be-f062-41ea-a23c-dd4aaedbab8b",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Wrapping-up-the-bone-marrow-deepheme-pipeline-81cbf3bef06241eaa23cdd4aaedbab8b",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----85jpnjbtqc8vtd0u9qr357epuk"
                 },
                 {
-                    "page_id": "579fbad6-fa97-4127-a3c7-04641c491417",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/grind-579fbad6fa974127a3c704641c491417",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----rqf858hbqp18of07cc6hu8tsl4"
+                    "page_id": "6a656203-8311-4f72-886e-f212f6ea1f32",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/ResNet-Magnification-Ablation-Experiment-Results-6a65620383114f72886ef212f6ea1f32",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----hkmo6d9lccuu6galme9a0ma45k"
                 },
                 {
-                    "page_id": "fff05454-253d-46a3-b1e4-bf946c178da6",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/talking-to-mom-fff05454253d46a3b1e4bf946c178da6",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----s7pk118r20iqpfh16rauhmand8"
+                    "page_id": "4b684ef5-1cfe-44a9-871e-c305e9a0f0d9",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Inspecting-poor-region-classification-results-and-inspecting-bugs-4b684ef51cfe44a9871ec305e9a0f0d9",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----2uk7ic7bo9jr8fjg3s9uo8q52k"
                 },
                 {
-                    "page_id": "6d9a0fd9-d4a4-40cb-ada8-17597c30bb18",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/testing-product-6d9a0fd9d4a440cbada817597c30bb18",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----5dv375negk2riqj14a7smmkug4"
+                    "page_id": "fc811055-95a8-4159-9de3-61fee15bb6aa",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Debugging-region-classification-fc81105595a841599de361fee15bb6aa",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----fg9lnf9v4ksqsekci02er5h5i0"
                 },
                 {
-                    "page_id": "63564486-ecf8-4983-826c-db383b49da92",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/grind-63564486ecf84983826cdb383b49da92",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----pgh8bdh7i6q2g0nut0r9qdnmjs"
+                    "page_id": "66a85877-2503-4c81-af96-bfdea47e650e",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Jotting-down-details-of-cell-spatial-statistics-metrics-66a8587725034c81af96bfdea47e650e",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----iqmjrt8ghlk45tnsgqika48kfg"
                 },
                 {
-                    "page_id": "104d216d-fe8c-4574-a4ba-af5a1f01e076",
-                    "page_public_url": "https://foam-salamander-68d.notion.site/SYNC-TEST-104d216dfe8c4574a4baaf5a1f01e076",
-                    "event_id": "c_eb3e13337dbeb12635a01c2621213bb8b7a5cc84905e18ee72bfb825b590ea91@group.calendar.google.com-----99ia6fmntakpg6qici2psqplho"
+                    "page_id": "fb53bd88-ddbd-47ba-af37-9d53632fb8e9",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Collecting-LLv4-BMA-Data-fb53bd88ddbd47baaf379d53632fb8e9",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----gu1t4r1rep987vo98338nktvcg"
+                },
+                {
+                    "page_id": "00d4deee-532c-441a-941b-44482de841d8",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Inspecting-data-collection-outcomes-and-sanity-checking-00d4deee532c441a941b44482de841d8",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----ld5n5tmmk5a589jksgrbkr1f2c"
+                }
+            ]
+        },
+        {
+            "title": "Clip Jar SkyDeck Application",
+            "database_id": "4e91c1e4-b9d5-4731-b477-538634b52f12",
+            "public_url": "https://www.notion.so/4e91c1e4b9d54731b477538634b52f12",
+            "calendar_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com",
+            "clips": [
+                {
+                    "page_id": "f214c059-de6e-4f79-87fb-e2e30839a139",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Looking-into-available-APIs-for-JAR-prototype-f214c059de6e4f7987fbe2e30839a139",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----jgni6oc5njqc7ip6pmaul0vu9g"
+                },
+                {
+                    "page_id": "5b95c227-f801-4dd3-878e-652d21d9c7c1",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Writing-out-minimal-functionalities-for-the-API-calls-5b95c227f8014dd3878e652d21d9c7c1",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----s5m73mv332umfhgtael05v9og8"
+                },
+                {
+                    "page_id": "b2ada887-8793-465b-970f-454edf69a79f",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Figuring-out-how-to-use-Notion-API-b2ada8878793465b970f454edf69a79f",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----5pr086450qb8ed0f0gpagard4s"
+                },
+                {
+                    "page_id": "1879f188-1d52-4c80-bc86-38baad04192c",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Figuring-out-how-to-use-Google-Calendar-API-1879f1881d524c80bc8638baad04192c",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----kjibmh3a2de6fqf195l1us35v8"
+                },
+                {
+                    "page_id": "a1503ec2-947b-484b-a03b-4d774e0a0a89",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Start-building-streamlit-prototype-a1503ec2947b484ba03b4d774e0a0a89",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----7nbls8nut1d84q6sgi5l9gdlao"
+                },
+                {
+                    "page_id": "0d48dad4-697b-4a0f-be27-1dbc502b0cb4",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Finishing-streamlit-prototype-0d48dad4697b4a0fbe271dbc502b0cb4",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----i3rlp9d3ti959dcot5mo2g3ua8"
+                },
+                {
+                    "page_id": "b9bede8b-d294-44ab-921e-2eef94872752",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Structuring-the-SkyDeck-application-b9bede8bd29444ab921e2eef94872752",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----3c0kd3gtlf1gtqle1fhum8mfms"
+                },
+                {
+                    "page_id": "fee10a1f-bbdf-4f1d-acb3-f3050f39a060",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Braining-storming-key-features-for-Clip-Jar-fee10a1fbbdf4f1dacb3f3050f39a060",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----8fgqdhac029pf4e01mc3e6ln5c"
+                },
+                {
+                    "page_id": "fe621265-feb3-44cf-ab34-ed40037f92a8",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Learning-Streamlit-fe621265feb344cfab34ed40037f92a8",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----jdmcs0dnmviuad7i15i8472vn0"
+                },
+                {
+                    "page_id": "36ab1b6b-ba12-412e-b099-705735805e47",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Building-KAT-AI-36ab1b6bba12412eb099705735805e47",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----a42q6rsakr9br5298ojoth8gf4"
+                },
+                {
+                    "page_id": "6e0e0a42-b2fe-4383-92b2-ff0c652e327d",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Looking-at-Reddit-Feedbacks-for-KAT-AI-6e0e0a42b2fe438392b2ff0c652e327d",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----afl43onq9924dj8v7t1faovohs"
+                },
+                {
+                    "page_id": "4b88166f-bdd5-4501-bd7c-6d771de3d618",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Putting-KAT-AI-on-Reddit-4b88166fbdd54501bd7c6d771de3d618",
+                    "event_id": "c_5d024475562992dc886fd5e7761bdd294cf5dcd3ca2a7a69e0a392c394b51274@group.calendar.google.com-----ebgiktmffotnrgkma56plu84vg"
                 }
             ]
         }
