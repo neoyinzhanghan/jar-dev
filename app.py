@@ -175,8 +175,8 @@ if __name__ == "__main__":
     df = get_jar_ledger_as_pd(selected_database_id)
     df = process_df(df)
 
-    with st.spinner('Syncing, please wait...'):
-        sync(selected_database_id) 
+    # with st.spinner('Syncing, please wait...'):
+    #     sync(selected_database_id) 
 
     total_entries = get_num_entries(df)
     average_entries_per_week = calculate_average_entries_per_week(df)
