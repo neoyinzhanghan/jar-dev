@@ -239,17 +239,13 @@ def edit_clip_title(page_id, new_title):
         old_title = get_page_info(page_id)["title"]
         if old_title != new_title:
             edit_page_title(page_id, new_title)
-            edit_event_title(event_id.split("-----")[0],event_id.split("-----")[1],  new_title)
-
-                    
+            edit_event_title(calendar_id=event_id.split("-----")[0],
+                             event_id=event_id.split("-----")[1],  
+                             new_title=new_title)                    
     
     # write the updated jars.json file
     with open('jars.json', 'w', encoding='utf-8') as f:
         json.dump(jars, f, ensure_ascii=False, indent=4)
-
-    # now change the title in the notion database and calendar event
-    edit_page_title(page_id, new_title)
-    edit_event_title(get_calendar_id_from_database_id(get_database_id_from_page_id(page_id)), new_title)
 
 def edit_clip_content(page_id, new_content):
     """ Edit the content of the clip with page_id to new_content. """
@@ -268,9 +264,6 @@ def edit_clip_content(page_id, new_content):
     # write the updated jars.json file
     with open('jars.json', 'w', encoding='utf-8') as f:
         json.dump(jars, f, ensure_ascii=False, indent=4)
-
-    # now change the content in the notion database and calendar event
-    edit_page_content(page_id, new_content)
 
 def get_jars_dct_title_key():
     """ Return a dictionary of all the JARs with their database_id, calendar_id and public_url.
@@ -316,8 +309,6 @@ def get_jar_ledger_as_pd(database_id):
         df_dct["Event Id"].append(clip["event_id"])
 
     df = pd.DataFrame(df_dct)
-
-
 
     return df
 
