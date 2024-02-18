@@ -61,6 +61,39 @@ def get_page_info(page_id):
         "public_url": public_url
     }
 
+import requests
+
+def get_page_content(page_id):
+    # The endpoint to retrieve the blocks of a page
+    url = f"https://api.notion.com/v1/blocks/{page_id}/children"
+    
+    try:
+        # Make the request to get the page's blocks
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # This will raise an error for unsuccessful responses
+        
+        # Extract the blocks from the response
+        blocks = response.json().get('results', [])
+        
+        # Initialize a list to hold the text content from each text block
+        text_contents = []
+        
+        # Iterate through the blocks to find paragraph blocks and extract their text content
+        for block in blocks:
+            if block.get('type') == 'paragraph':
+                # Extracting the text content from each paragraph block
+                text_segments = block['paragraph']['rich_text']
+                for text_segment in text_segments:
+                    if text_segment['type'] == 'text':
+                        text_contents.append(text_segment['text']['content'])
+        
+        # Join the text contents into a single string to return
+        return ' '.join(text_contents)
+    
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to retrieve page content: {e}")
+        return None    
+
 def get_database_id_from_page_id(page_id):
     url = f"https://api.notion.com/v1/pages/{page_id}"
 
@@ -225,6 +258,81 @@ def create_page(database_id, title, start_time, end_time, content):
         print(f"Failed to write content to page: {response.text}")
         return None
     
+def edit_page_title(page_id, new_title):
+    url = f"https://api.notion.com/v1/pages/{page_id}"
+
+    payload = {
+        "properties": {
+            "Title": {
+                "title": [
+                    {
+                        "text": {
+                            "content": new_title
+                        }
+                    }
+                ]
+            }
+        }
+    }
+
+    response = requests.patch(url, json=payload, headers=headers)
+    if response.status_code == 200:  # Successful API call
+        data = response.json()
+        return data
+    else:
+        print(f"Failed to edit page title: {response.text}")
+        return None
+    
+def edit_database_title(database_id, new_title):
+    url = f"https://api.notion.com/v1/databases/{database_id}"
+
+    payload = {
+        "title": [
+            {
+                "text": {
+                    "content": new_title
+                }
+            }
+        ]
+    }
+
+    response = requests.patch(url, json=payload, headers=headers)
+    if response.status_code == 200:  # Successful API call
+        data = response.json()
+        return data
+    else:
+        print(f"Failed to edit database title: {response.text}")
+        return None
+
+def edit_page_content(page_id, new_content):
+    url = f"https://api.notion.com/v1/blocks/{page_id}/children"
+
+    payload = {
+        "children": [
+            {
+                "object": "block",
+                "type": "paragraph",
+                "paragraph": {
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": new_content
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+
+    response = requests.patch(url, json=payload, headers=headers)
+    if response.status_code == 200:  # Successful API call
+        data = response.json()
+        return data
+    else:
+        print(f"Failed to edit page content: {response.text}")
+        return None
 
 def list_pages(database_id):
     """ Return a list of all page_id in the database """
@@ -265,12 +373,5 @@ def change_times(page_id, new_start_time, new_end_time):
         return None
 
 if __name__ == "__main__":
-    # make sure there is hour minute time in the start_time and end_time
-    create_page(database_id="3631f666913542f0bb613f0c591132d2",
-                title="Test Page", 
-                start_time="2022-07-01T00:00:00",  # Start time at the beginning of July 1st
-                end_time="2022-07-02T23:59:00",    # End time just before the end of July 2nd
-                content="This is a test page")
-
-
     
+    print(get_page_content("f28dc24a-d2d4-4a44-8db8-f8e9328048ea"))

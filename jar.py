@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 
 from notion import *
 from google_calendar import *
@@ -173,12 +174,152 @@ def list_clips_from_calendar_id(calendar_id):
             if jar['calendar_id'] == calendar_id:
                 return jar['clips']
 
+def delete_clip_using_page_id(page_id):
+    """ Delete a clip from the database using the page_id. """
+
+    with open('jars.json', 'r') as f:
+        jars = json.load(f)
+        for jar in jars["jars"]:
+            if jar['database_id'] == get_database_id_from_page_id(page_id):
+                for clip in jar['clips']:
+                    if clip['page_id'] == page_id:
+                        jar['clips'].remove(clip)
+
+                        page_id_to_delete = page_id
+                        event_id_to_delete = clip['event_id']
+
+                        archive_page(page_id_to_delete)
+                        delete_event(event_id_to_delete.split("-----")[0], event_id_to_delete.split("-----")[1])
+
+                        break
+                break
+        
+        # write the updated jars.json file
+        with open('jars.json', 'w', encoding='utf-8') as f:
+            json.dump(jars, f, ensure_ascii=False, indent=4)       
+    
+    # write the updated jars.json file
+    with open('jars.json', 'w', encoding='utf-8') as f:
+        json.dump(jars, f, ensure_ascii=False, indent=4)
+
+def edit_jar_title(database_id, new_title):
+    """ Edit the title of the JAR with database_id to new_title. """
+
+    with open('jars.json', 'r') as f:
+        jars = json.load(f)
+        for jar in jars["jars"]:
+            if jar['database_id'] == database_id:
+
+                old_title = jar['title']
+
+                if old_title == new_title:
+                    return None
+                else:
+                    jar['title'] = new_title
+                    break
+    
+    # write the updated jars.json file
+    with open('jars.json', 'w', encoding='utf-8') as f:
+        json.dump(jars, f, ensure_ascii=False, indent=4)
+
+    # now change the title in the notion database and calendar event
+    edit_database_title(database_id, new_title)
+    edit_calendar_title(get_calendar_id_from_database_id(database_id), new_title)
+
+def edit_clip_title(page_id, new_title):
+    """ Edit the title of the clip with page_id to new_title. """
+
+    with open('jars.json', 'r') as f:
+        jars = json.load(f)
+        for jar in jars["jars"]:
+            for clip in jar['clips']:
+                if clip['page_id'] == page_id:
+                    event_id = clip['event_id']
+
+        old_title = get_page_info(page_id)["title"]
+        if old_title != new_title:
+            edit_page_title(page_id, new_title)
+            edit_event_title(event_id.split("-----")[0],event_id.split("-----")[1],  new_title)
+
+                    
+    
+    # write the updated jars.json file
+    with open('jars.json', 'w', encoding='utf-8') as f:
+        json.dump(jars, f, ensure_ascii=False, indent=4)
+
+    # now change the title in the notion database and calendar event
+    edit_page_title(page_id, new_title)
+    edit_event_title(get_calendar_id_from_database_id(get_database_id_from_page_id(page_id)), new_title)
+
+def edit_clip_content(page_id, new_content):
+    """ Edit the content of the clip with page_id to new_content. """
+
+    with open('jars.json', 'r') as f:
+        jars = json.load(f)
+        for jar in jars["jars"]:
+            for clip in jar['clips']:
+                if clip['page_id'] == page_id:
+                    event_id = clip['event_id']
+
+        old_content = get_page_content(page_id)
+        if old_content != new_content:
+            edit_page_content(page_id, new_content)
+
+    # write the updated jars.json file
+    with open('jars.json', 'w', encoding='utf-8') as f:
+        json.dump(jars, f, ensure_ascii=False, indent=4)
+
+    # now change the content in the notion database and calendar event
+    edit_page_content(page_id, new_content)
+
+def get_jars_dct_title_key():
+    """ Return a dictionary of all the JARs with their database_id, calendar_id and public_url.
+    The dictionary keys are the jar titles, if there is title duplicate just add an index to the title.
+    """
+
+    with open('jars.json', 'r') as f:
+        jars = json.load(f)
+        jars_dct = {}
+        for jar in jars["jars"]:
+            title = jar['title']
+
+            if title in jars_dct:
+                i = 1
+                while title+str(i) in jars_dct:
+                    i += 1
+                title += str(i)
+
+            database_id = jar['database_id']
+            calendar_id = jar['calendar_id']
+            public_url = jar['public_url']
+            jars_dct[title] = {"database_id": database_id, "calendar_id": calendar_id, "public_url": public_url}
+
+def get_jar_ledger_as_pd(database_id):
+    """ Return a pandas dataframe of all the clips in the JAR with database_id. """
+
+    clips = list_clips_from_database_id(database_id)
+
+    df_dct = {"Title": [], "Start Time": [], "End Time": [], "Public URL": [], "Content": [], "Page Id": [], "Event Id": []}
+
+    for clip in clips:
+        page_id = clip["page_id"]
+        page = get_page_info(page_id)
+        content = get_page_content(page_id)
+        df_dct["Title"].append(page["title"])
+        df_dct["Start Time"].append(page["start_time"])
+        df_dct["End Time"].append(page["end_time"])
+        df_dct["Public URL"].append(page["public_url"])
+        df_dct["Content"].append(content)
+        df_dct["Page Id"].append(page_id)
+        df_dct["Event Id"].append(clip["event_id"])
+
+    df = pd.DataFrame(df_dct)
+
+
+
+    return df
+
 if __name__ == '__main__':
     # create_jar("Testing for Ryusei Demo")
     database_id = get_database_id_from_title("Testing for Ryusei Demo")
-    jar_commit(database_id=database_id,
-               title="Test entry",
-               content="This is a test entry",
-               start_time="2024-02-17T10:00:00",
-               end_time="2024-02-17T12:00:00"
-               )
+    print(get_jar_ledger_as_pd(database_id))

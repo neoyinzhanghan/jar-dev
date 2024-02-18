@@ -53,6 +53,18 @@ def list_events(calendar_id):
 
     return events
 
+def edit_event_title(calendar_id, event_id, new_title):
+    """ Edit the title of an event """
+    event = service.events().get(calendarId=calendar_id, eventId=event_id).execute()
+    event["summary"] = new_title
+    service.events().update(calendarId=calendar_id, eventId=event_id, body=event).execute()
+
+def edit_calendar_title(calendar_id, new_title):
+    """ Edit the title of a calendar """
+    calendar = service.calendars().get(calendarId=calendar_id).execute()
+    calendar["summary"] = new_title
+    service.calendars().update(calendarId=calendar_id, body=calendar).execute()
+
 def get_event_info(event_id):
     calendar_id, internal_event_id = event_id.split("-----")
     response = service.events().get(calendarId=calendar_id, eventId=internal_event_id).execute()
