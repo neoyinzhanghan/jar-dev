@@ -260,10 +260,12 @@ if __name__ == "__main__":
             submit_button = st.form_submit_button(label="Submit")
 
             # get a json serializable string of the start date and time
-            start_date_and_time = start_date_and_time.replace(tzinfo=pytz.utc)
-            start_date_and_time_str = start_date_and_time.isoformat()
-            end_date_and_time = end_date_and_time.replace(tzinfo=pytz.utc)
-            end_date_and_time_str = end_date_and_time.isoformat()
+            pst_timezone = pytz.timezone('America/Los_Angeles')
+            start_date_and_time_pst = start_date_and_time.replace(tzinfo=pst_timezone)
+            end_date_and_time_pst = end_date_and_time.replace(tzinfo=pst_timezone)
+
+            start_date_and_time_str = start_date_and_time_pst.isoformat()
+            end_date_and_time_str = end_date_and_time_pst.isoformat()
 
             if submit_button:
                 jar_commit(selected_database_id, title, content, start_date_and_time_str, end_date_and_time_str)
@@ -281,20 +283,24 @@ if __name__ == "__main__":
             title_tuple,
             label_visibility="collapsed",
         )
-         
-        st.write("")
+
+        page_id = df[df["Title"] == form_delete]["Page Id"].values[0]
+
+        # get the content of the selected entry
+        old_content = df[df["Title"] == form_delete]["Content"].values[0]
+        old_title = df[df["Title"] == form_delete]["Title"].values[0]
 
         with st.form(key="form_edit"):
-            st.write("<h5>Entry Title</h5>", unsafe_allow_html=True)
-            title = st.text_input("Class", label_visibility="collapsed")
-            st.write("<h5>Content</h5>", unsafe_allow_html=True)
-            content = st.text_input(f"What would you like to know about?", placeholder="Type here ...", label_visibility="collapsed")
-            start_co, end_co = st.columns(2)
-            with start_co:
-                start_date = st.date_input("Start date", datetime.date(2021, 1, 1))
-            with end_co:
-                end_date = st.date_input("End date", datetime.date(2021, 12, 31))
+            st.write("<h5>Editing Entry Title</h5>", unsafe_allow_html=True)
+            title = st.text_input("Class", label_visibility="collapsed", value=old_title)
+            st.write("<h5>Editing Content</h5>", unsafe_allow_html=True)
+            content = st.text_input(f"What would you like to know about?", placeholder="Type here ...", label_visibility="collapsed", value=old_content)
             submit_button = st.form_submit_button(label="Save")
+
+            if submit_button:
+                edit_clip_content(page_id, content)
+                edit_clip_title(page_id, title)
+                st.success("Entry edited successfully!", icon="✅")
 
     elif edit_option == delete:
 

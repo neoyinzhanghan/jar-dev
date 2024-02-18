@@ -303,9 +303,28 @@ def edit_database_title(database_id, new_title):
         print(f"Failed to edit database title: {response.text}")
         return None
 
-def edit_page_content(page_id, new_content):
-    url = f"https://api.notion.com/v1/blocks/{page_id}/children"
+def delete_blocks(page_id):
+    """Delete all blocks in a page."""
+    retrieve_url = f"https://api.notion.com/v1/blocks/{page_id}/children"
+    response = requests.get(retrieve_url, headers=headers)
+    if response.status_code == 200:
+        blocks = response.json().get("results", [])
+        for block in blocks:
+            block_id = block["id"]
+            delete_url = f"https://api.notion.com/v1/blocks/{block_id}"
+            delete_response = requests.delete(delete_url, headers=headers)
+            if delete_response.status_code not in [200, 204]:
+                print(f"Failed to delete block {block_id}: {delete_response.text}")
+                # You might want to handle this more gracefully in a real application
+    else:
+        print(f"Failed to retrieve blocks for page {page_id}: {response.text}")
 
+def edit_page_content(page_id, new_content):
+    # First, delete existing content
+    delete_blocks(page_id)
+    
+    # Then, add new content
+    url = f"https://api.notion.com/v1/blocks/{page_id}/children"
     payload = {
         "children": [
             {
@@ -324,11 +343,9 @@ def edit_page_content(page_id, new_content):
             }
         ]
     }
-
     response = requests.patch(url, json=payload, headers=headers)
     if response.status_code == 200:  # Successful API call
-        data = response.json()
-        return data
+        return response.json()
     else:
         print(f"Failed to edit page content: {response.text}")
         return None
