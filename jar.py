@@ -294,6 +294,8 @@ def get_jars_dct_title_key():
             public_url = jar['public_url']
             jars_dct[title] = {"database_id": database_id, "calendar_id": calendar_id, "public_url": public_url}
 
+        return jars_dct
+
 def get_jar_ledger_as_pd(database_id):
     """ Return a pandas dataframe of all the clips in the JAR with database_id. """
 

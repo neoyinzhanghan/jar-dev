@@ -3,7 +3,7 @@ from streamlit_extras.stoggle import stoggle
 from jar import get_jars_dct_title_key, get_jar_ledger_as_pd, get_jar_ledger_as_pd
 from jar import jar_commit, delete_clip_using_page_id, edit_clip_content, edit_clip_title, edit_jar_title
 from sync import sync
-from analytics import process_df
+from analytics import process_df, get_num_entries
 import streamlit.components.v1 as components
 import time
 import gspread
@@ -12,11 +12,6 @@ import datetime
 #####################################
 # FUNCTIONS
 #####################################
-
-# Function to get total number of entries in selected JAR
-
-
-# Function to get average number of entries per week in selected JAR
 
 # Function to generate HTML for a single card with a title and a static statistic number
 def generate_card_html(title, statistic, card_id):
@@ -142,19 +137,25 @@ if __name__ == "__main__":
     delete = "Delete entry"
 
     st.write("<h5>Select JAR</h5>", unsafe_allow_html=True)
+
+    jar_dct = get_jars_dct_title_key()
+    # get a tuple of all the keys
+    jar_titles = tuple(jar_dct.keys())
+    
     option = st.selectbox(
             "",
-            (
-                "JAR 1",
-            ),
+            jar_titles,
             label_visibility="collapsed",
         )
 
     st.write("")
     st.write("")
 
-    total_entries = "150"
-    average_entries_per_week = "20"
+    selected_database_id = jar_dct[option]["database_id"]
+    df = get_jar_ledger_as_pd(selected_database_id)
+    # df = process_df(get_jar_ledger_as_pd(selected_database_id))
+    total_entries = get_num_entries(df)
+    average_entries_per_week = "20" # TODO and make sure to fix the process_df function
 
     first_co, second_co = st.columns(2)
     with first_co:
