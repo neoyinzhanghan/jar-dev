@@ -35,7 +35,34 @@ def create_event(title, description, start_time, end_time, calendar_id="primary"
     }
 
     response = service.events().insert(calendarId=calendar_id, body=event).execute()
-    print(response)
+    # print(response)
+
+    return response
+
+def delete_event(calendar_id, event_id):
+    """ Delete an event from the calendar """
+    service.events().delete(calendarId=calendar_id, eventId=event_id).execute()
+
+def list_events(calendar_id):
+    """ Return a list of all event_id in the calendar"""
+    response = service.events().list(calendarId=calendar_id).execute() 
+
+    events = []
+    for event in response["items"]:
+        events.append(calendar_id+'-----'+event["id"])
+
+    return events
+
+def get_event_info(event_id):
+    calendar_id, internal_event_id = event_id.split("-----")
+    response = service.events().get(calendarId=calendar_id, eventId=internal_event_id).execute()
+    # print(response)
+
+    start_time = response["start"]["dateTime"]
+    end_time = response["end"]["dateTime"]
+    title = response["summary"]
+
+    return title, start_time, end_time
 
 if __name__ == "__main__":
     create_calendar("Test")

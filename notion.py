@@ -3,8 +3,8 @@ import requests
 import json
 from datetime import datetime, timezone
 
-NOTION_TOKEN = "secret_FjD2j3Jf1MRndy7BwH31JD13DiVZk7kd5z7vMqWAi9b"
-DATABASE_ID = "3631f666913542f0bb613f0c591132d2"
+notion_secret = json.load(open("resources/notion_secret.json", "r"))
+NOTION_TOKEN = notion_secret["notion_token"]
 
 # import the /Users/neo/Documents/MODS/JAR/jars.json file
 jars = json.load(open("/Users/neo/Documents/MODS/JAR/jars.json", "r"))
@@ -15,7 +15,7 @@ headers = {
     "Notion-Version": "2022-06-28"
 }
 
-def get_pages(database_id=DATABASE_ID):
+def get_pages(database_id):
     url = f"https://api.notion.com/v1/databases/{database_id}/query"
 
     payload = {"page_size": 100}
@@ -30,7 +30,22 @@ def get_pages(database_id=DATABASE_ID):
 
     return results
 
-def get_page_info(page):
+def get_page(page_id):
+
+    url = f"https://api.notion.com/v1/pages/{page_id}"
+
+    response = requests.get(url, headers=headers)
+    data = response.json()
+
+    # with open(f"ledgers/{page_id}.json", 'w', encoding='utf-8') as f:
+    #     json.dump(data, f, ensure_ascii=False, indent=4)
+
+    return data
+
+def get_page_info(page_id):
+
+    page = get_page(page_id)
+
     page_id = page["id"]
     props = page["properties"]
     title = props["Title"]["title"][0]["text"]["content"]
@@ -45,6 +60,14 @@ def get_page_info(page):
         "end_time": end_time,
         "public_url": public_url
     }
+
+def get_database_id_from_page_id(page_id):
+    url = f"https://api.notion.com/v1/pages/{page_id}"
+
+    response = requests.get(url, headers=headers)
+    data = response.json()
+
+    return data["parent"]["database_id"]
 
 def create_database(title='New JAR'):
     # Ensure the directory exists
@@ -99,6 +122,36 @@ def create_database(title='New JAR'):
     else:
         print(f"Failed to create database: {response.text}")
         return None
+    
+def delete_page(page_id):
+
+    url = f"https://api.notion.com/v1/pages/{page_id}"
+
+    response = requests.delete(url, headers=headers)
+    if response.status_code == 200:  # Successful API call
+        data = response.json()
+        return data
+    else:
+        # print(f"Failed to delete page: {response.text}")
+        return None
+    
+def archive_page(page_id):
+
+    url = f"https://api.notion.com/v1/pages/{page_id}"
+
+    payload = {
+        "archived": True
+    }
+
+    response = requests.patch(url, json=payload, headers=headers)
+    if response.status_code == 200:  # Successful API call
+        data = response.json()
+        return data
+    else:
+        print(f"Failed to archive page: {response.text}")
+        return None
+    
+
     
 def create_page(database_id, title, start_time, end_time, content):
     url = "https://api.notion.com/v1/pages"
@@ -171,10 +224,49 @@ def create_page(database_id, title, start_time, end_time, content):
     else:
         print(f"Failed to write content to page: {response.text}")
         return None
+    
+
+def list_pages(database_id):
+    """ Return a list of all page_id in the database """
+    pages = get_pages(database_id)
+
+    page_ids = []
+    for page in pages:
+        page_ids.append(page["id"])
+
+    return page_ids
+
+def change_times(page_id, new_start_time, new_end_time):
+    """ Change the start and end times of a page """
+    url = f"https://api.notion.com/v1/pages/{page_id}"
+
+    payload = {
+        "properties": {
+            "Start Time": {
+                "date": {
+                    "start": new_start_time
+                }
+            },
+            "End Time": {
+                "date": {
+                    "start": new_end_time
+                }
+            }
+        }
+    }
+
+    # Send a PATCH request to the API
+    response = requests.patch(url, json=payload, headers=headers)
+    if response.status_code == 200:  # Successful API call
+        data = response.json()
+        return data
+    else:
+        print(f"Failed to change times: {response.text}")
+        return None
 
 if __name__ == "__main__":
     # make sure there is hour minute time in the start_time and end_time
-    create_page(database_id=DATABASE_ID,
+    create_page(database_id="3631f666913542f0bb613f0c591132d2",
                 title="Test Page", 
                 start_time="2022-07-01T00:00:00",  # Start time at the beginning of July 1st
                 end_time="2022-07-02T23:59:00",    # End time just before the end of July 2nd

@@ -1,0 +1,67 @@
+{
+    "object": "page",
+    "id": "b8be7443-9b2a-4bdc-8d1c-ca5d57879d6b",
+    "created_time": "2024-02-18T01:35:00.000Z",
+    "last_edited_time": "2024-02-18T01:35:00.000Z",
+    "created_by": {
+        "object": "user",
+        "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+    },
+    "last_edited_by": {
+        "object": "user",
+        "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+        "type": "database_id",
+        "database_id": "5d5f91b2-48ff-4656-9cc5-f0508bec0abc"
+    },
+    "archived": false,
+    "properties": {
+        "Start Time": {
+            "id": "V%40vk",
+            "type": "date",
+            "date": {
+                "start": "2024-02-17T13:00:00.000-08:00",
+                "end": null,
+                "time_zone": null
+            }
+        },
+        "End Time": {
+            "id": "WtZF",
+            "type": "date",
+            "date": {
+                "start": "2024-02-17T00:00:00.000-08:00",
+                "end": null,
+                "time_zone": null
+            }
+        },
+        "Title": {
+            "id": "title",
+            "type": "title",
+            "title": [
+                {
+                    "type": "text",
+                    "text": {
+                        "content": "Trying out manual entry",
+                        "link": null
+                    },
+                    "annotations": {
+                        "bold": false,
+                        "italic": false,
+                        "strikethrough": false,
+                        "underline": false,
+                        "code": false,
+                        "color": "default"
+                    },
+                    "plain_text": "Trying out manual entry",
+                    "href": null
+                }
+            ]
+        }
+    },
+    "url": "https://www.notion.so/Trying-out-manual-entry-b8be74439b2a4bdc8d1cca5d57879d6b",
+    "public_url": "https://foam-salamander-68d.notion.site/Trying-out-manual-entry-b8be74439b2a4bdc8d1cca5d57879d6b",
+    "request_id": "04aa5a34-ad57-490e-9e65-55a7fb2e719e"
+}
