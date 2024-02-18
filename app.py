@@ -207,7 +207,7 @@ if __name__ == "__main__":
         
         components.html(generate_full_html(), height=350)
 
-        sync_button = st.button("Sync", use_container_width=True, type="danger")
+        sync_button = st.button("Sync", use_container_width=True)
         if sync_button:
             with st.spinner("Syncing, please wait..."):
                 sync(selected_database_id)
