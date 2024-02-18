@@ -3,19 +3,12 @@ import numpy as np
 from math import exp, log
 from matplotlib import pyplot as plt
 
-def gradient_fn(x, a=5, b=15):
+def gradient_fn(x, a=5, b=15, min_grad=0.2):
 
     # apply the logistic function to input x
-    return 1 / (1 + exp(a - (x / b)))
+    return max(1 / (1 + exp(a - (x / b))), min_grad)
 
-# Inverse of the logistic function with handling for gradient values of 0
-def inverse_gradient_fn(y, a=5, b=15):
-    if y == 0:
-        return 0  # Handling 0 gradients specifically to avoid division by zero
-    else:
-        return b * (a - log((1/y) - 1))
-
-def plot_grads_with_top_extended_boundaries_fixed(grads, starting_jar_dim=5, a=5, b=15):
+def plot_grads_with_top_extended_boundaries_fixed(grads, starting_jar_dim=4, a=5, b=15):
     """
     Creates a square grid visualization with custom color gradients based on the
     inverse of a logistic function, with colors inverted so that white represents 0
@@ -29,7 +22,8 @@ def plot_grads_with_top_extended_boundaries_fixed(grads, starting_jar_dim=5, a=5
     - starting_jar_dim: The dimension of the grid, determining its size as starting_jar_dim x starting_jar_dim.
     - a, b: Parameters of the logistic function used to calculate the inverse gradients.
     """
-    while len(grads) > starting_jar_dim**2:
+
+    while len(grads) >= starting_jar_dim**2:
         starting_jar_dim += 1
 
     while len(grads) < starting_jar_dim**2:
@@ -65,10 +59,13 @@ def plot_grads_with_top_extended_boundaries_fixed(grads, starting_jar_dim=5, a=5
     ax.plot([-0.5, -0.5], [-0.5-extension, starting_jar_dim-0.5], color='black', linewidth=boundary_thickness) # Left
     ax.plot([starting_jar_dim-0.5, starting_jar_dim-0.5], [-0.5-extension, starting_jar_dim-0.5], color='black', linewidth=boundary_thickness) # Right
         
-    plt.show()
+    return plt
 
 
-def visualize(df, theme='basic', starting_jar_dim=2):
+def visualize(df, theme='basic', starting_jar_dim=4):
+
+    starting_jar_dim = int(starting_jar_dim)
+
     # sort the df increasing order by Start Time
     df = df.sort_values(by="Start Time")
 
@@ -79,7 +76,7 @@ def visualize(df, theme='basic', starting_jar_dim=2):
 
         grads.append(gradient_fn(duration))
 
-    return plot_grads_with_top_extended_boundaries_fixed(grads, theme, starting_jar_dim)
+    return plot_grads_with_top_extended_boundaries_fixed(grads, starting_jar_dim=starting_jar_dim)
 
 
 if __name__ == "__main__":

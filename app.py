@@ -4,6 +4,7 @@ from jar import get_jars_dct_title_key, get_jar_ledger_as_pd, get_jar_ledger_as_
 from jar import jar_commit, delete_clip_using_page_id, edit_clip_content, edit_clip_title, edit_jar_title
 from sync import sync
 from analytics import process_df, get_num_entries
+from jar_progress import visualize
 import streamlit.components.v1 as components
 import time
 import gspread
@@ -153,7 +154,7 @@ if __name__ == "__main__":
 
     selected_database_id = jar_dct[option]["database_id"]
     df = get_jar_ledger_as_pd(selected_database_id)
-    # df = process_df(get_jar_ledger_as_pd(selected_database_id))
+    df = process_df(df)
     total_entries = get_num_entries(df)
     average_entries_per_week = "20" # TODO and make sure to fix the process_df function
 
@@ -184,15 +185,12 @@ if __name__ == "__main__":
         components.html(generate_full_html(), height=350)
 
     with second_co:
-        st.markdown(
-                """
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                    <img src="https://i.imgur.com/EKx9qSk.png" style="max-width: 100%; border-radius: 5%;">
-                </a>
-                """,
-                unsafe_allow_html=True,
-            )
-
+        plot = visualize(df, theme='basic', starting_jar_dim=4)
+        
+        # Directly display the plot using the appropriate Streamlit function
+        # If visualize(df) returns a Matplotlib figure
+        st.pyplot(plot)
+        
     st.divider()
 
     st.write("<h5>Select action</h5>", unsafe_allow_html=True)
