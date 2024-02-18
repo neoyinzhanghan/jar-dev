@@ -16,7 +16,7 @@ import datetime
 # Function to generate HTML for a single card with a title and a static statistic number
 def generate_card_html(title, statistic, card_id):
     card_html = f"""
-    <div style="border: 2px solid #ccc; margin-bottom: 32px; padding: 20px; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div style="border: 2px solid rgba(239, 245, 255, 0.69); margin-bottom: 32px; padding: 20px; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
         <h2 style="margin: 0; padding: 0; color: rgba(239, 245, 255, 0.69); font-family: 'Inter', sans-serif;">{title}</h2>
         <p style="margin: 10px 0 0 0; font-size: 36px; font-weight: bold; color: rgba(252, 253, 255, 0.94); font-family: 'Inter', sans-serif;">{statistic}</p>
     </div>
@@ -165,6 +165,14 @@ if __name__ == "__main__":
             
             full_html = f"""
             <html>
+            <head>
+                <style>
+                    body {{
+                        background-color: rgb(14, 17, 23);
+                        font-family: 'Inter', sans-serif;
+                    }}
+                </style>
+            </head>
             <body>
                 {card_1_html}
                 {card_2_html}
