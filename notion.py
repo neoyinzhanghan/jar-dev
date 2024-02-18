@@ -6,8 +6,7 @@ from datetime import datetime, timezone
 notion_secret = json.load(open("resources/notion_secret.json", "r"))
 NOTION_TOKEN = notion_secret["notion_token"]
 
-# import the /Users/neo/Documents/MODS/JAR/jars.json file
-jars = json.load(open("/Users/neo/Documents/MODS/JAR/jars.json", "r"))
+jars = json.load(open("jars.json", "r"))
 
 headers = {
     "Authorization": "Bearer " + NOTION_TOKEN,
