@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 import time
 import gspread
 import pytz
-import datetime
+from datetime import datetime
 
 #####################################
 # FUNCTIONS
@@ -17,6 +17,21 @@ import datetime
 
 BORDER_COLOR = "rgba(239, 245, 255, 0.69)"
 BG_COLOR = "rgba(14, 17, 23, 1)"
+
+def calculate_average_entries_per_week(data):
+    start_times = data["Start Time"].to_list()
+    
+    if len(start_times) == 0:
+        return 0
+    
+    # Calculate the number of weeks spanned by entries
+    min_date = min(start_times)
+    max_date = max(start_times)
+    delta = max_date - min_date
+    weeks = max(1, delta.days / 7)
+    average_entries_per_week = len(start_times) / weeks
+    
+    return average_entries_per_week
 
 # Function to generate HTML for a single card with a title and a static statistic number
 def generate_card_html(title, statistic, card_id):
@@ -160,7 +175,7 @@ if __name__ == "__main__":
     df = get_jar_ledger_as_pd(selected_database_id)
     df = process_df(df)
     total_entries = get_num_entries(df)
-    average_entries_per_week = "20" # TODO and make sure to fix the process_df function
+    average_entries_per_week = calculate_average_entries_per_week(df)
 
     first_co, second_co = st.columns(2)
     with first_co:
