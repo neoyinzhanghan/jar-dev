@@ -317,4 +317,5 @@ def get_jar_ledger_as_pd(database_id):
 
 if __name__ == '__main__':
 
-    create_jar("Clip Jar SkyDeck Application")
+    create_jar("HMM-RHP Project")
+    create_jar("100 Customer Interviews")
