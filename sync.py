@@ -1,6 +1,8 @@
+import json
 from notion import *
 from google_calendar import *
 from jar import *
+from tqdm import tqdm
 
 def _event_id_in_clips(event_id, clips):
     for clip in clips:
@@ -97,7 +99,11 @@ def sync(database_id):
     sync_clips_subtractive(database_id)
     sync_all_times(database_id)
 
-if __name__ == "__main__":
-    sync("e9ea5456-b271-473a-be6d-9ba0b472a5ef")
-    sync("4e91c1e4-b9d5-4731-b477-538634b52f12")
+def sync_all():
+    with open('jars.json', 'r') as f:
+        jars = json.load(f)
+        for jar in tqdm(jars["jars"], desc="Syncing"):
+            sync(jar["database_id"])
 
+if __name__ == "__main__":
+    sync_all()
