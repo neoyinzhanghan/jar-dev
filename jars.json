@@ -184,14 +184,58 @@
         {
             "title": "HMM-RHP Project",
             "database_id": "104657f7-988b-49e6-83ae-0d850cfba441",
-            "public_url": "https://www.notion.so/104657f7988b49e683ae0d850cfba441"
+            "public_url": "https://www.notion.so/104657f7988b49e683ae0d850cfba441",
+            "calendar_id": "c_40f6207f17df362053bc9e8820e97b9bc92347d79fbd826413b6dc6a697c52c3@group.calendar.google.com",
+            "clips": [
+                {
+                    "page_id": "18a1650e-9865-4dde-8835-996001a94c48",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Meeting-with-Haiyan-Shuni-about-next-step-18a1650e98654dde8835996001a94c48",
+                    "event_id": "c_40f6207f17df362053bc9e8820e97b9bc92347d79fbd826413b6dc6a697c52c3@group.calendar.google.com-----t8ahip9ef05ghsngcqd510hvfg"
+                },
+                {
+                    "page_id": "bc66fb1c-34a7-4412-bb6d-09799975ad0f",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Implementing-basic-HMM-using-hmmlearn-bc66fb1c34a74412bb6d09799975ad0f",
+                    "event_id": "c_40f6207f17df362053bc9e8820e97b9bc92347d79fbd826413b6dc6a697c52c3@group.calendar.google.com-----6d6vimg3t6d6fb7glq5qk4htmg"
+                }
+            ]
         },
         {
             "title": "100 Customer Interviews",
             "database_id": "342f4577-264b-4783-b7a7-50745fc1fee8",
             "public_url": "https://www.notion.so/342f4577264b4783b7a750745fc1fee8",
             "calendar_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com",
-            "clips": []
+            "clips": [
+                {
+                    "page_id": "3f9f3398-c8ce-4e21-abeb-699f7699bb03",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Hai-Customer-Interview-3f9f3398c8ce4e21abeb699f7699bb03",
+                    "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----29o2skp4lnhib3sionnlnvhdf8"
+                },
+                {
+                    "page_id": "55fbcc59-f1d2-4d58-9ee7-e7c8ea48468e",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Begum-Customer-Interview-55fbcc59f1d24d589ee7e7c8ea48468e",
+                    "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----1gn1krdavaih2mv75isdte2tlk"
+                },
+                {
+                    "page_id": "c0bb91b4-d828-4578-9350-c1a49615ed0e",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Rhonda-Shrader-Workshop-on-Customer-Discovery-c0bb91b4d82845789350c1a49615ed0e",
+                    "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----20f9of7bp8goandsp2qd4sq1gs"
+                },
+                {
+                    "page_id": "a86efba2-b9a0-488d-9745-ea0e06ee0e13",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Coming-up-with-customer-interview-list-a86efba2b9a0488d9745ea0e06ee0e13",
+                    "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----nvclqslibiffcjj7h5sa4r00g8"
+                },
+                {
+                    "page_id": "f7eb945a-e6f3-4241-8d7e-c2703081be5e",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Writing-down-initial-customer-interview-questions-f7eb945ae6f342418d7ec2703081be5e",
+                    "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----fkud060fo9m7korsc84ivd9bm0"
+                },
+                {
+                    "page_id": "cfeecb55-1fbe-4042-b739-f4d7954094ff",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Customer-interview-email-template-first-round-cfeecb551fbe4042b739f4d7954094ff",
+                    "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----bi76aoc7no690lcahefbd1bh8o"
+                }
+            ]
         }
     ],
     "root_id": "8374580cc7b845cea5fbd94a459a913a",

@@ -1,0 +1,406 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "cfeecb55-1fbe-4042-b739-f4d7954094ff",
+            "created_time": "2024-02-19T22:24:00.000Z",
+            "last_edited_time": "2024-02-19T22:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "342f4577-264b-4783-b7a7-50745fc1fee8"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "fTeP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-15T01:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "~u%3C%5C",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-15T02:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Customer interview email template -- first round",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Customer interview email template -- first round",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Customer-interview-email-template-first-round-cfeecb551fbe4042b739f4d7954094ff",
+            "public_url": "https://foam-salamander-68d.notion.site/Customer-interview-email-template-first-round-cfeecb551fbe4042b739f4d7954094ff"
+        },
+        {
+            "object": "page",
+            "id": "f7eb945a-e6f3-4241-8d7e-c2703081be5e",
+            "created_time": "2024-02-19T22:24:00.000Z",
+            "last_edited_time": "2024-02-19T22:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "342f4577-264b-4783-b7a7-50745fc1fee8"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "fTeP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-14T01:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "~u%3C%5C",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-14T02:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Writing down initial customer interview questions",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Writing down initial customer interview questions",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Writing-down-initial-customer-interview-questions-f7eb945ae6f342418d7ec2703081be5e",
+            "public_url": "https://foam-salamander-68d.notion.site/Writing-down-initial-customer-interview-questions-f7eb945ae6f342418d7ec2703081be5e"
+        },
+        {
+            "object": "page",
+            "id": "a86efba2-b9a0-488d-9745-ea0e06ee0e13",
+            "created_time": "2024-02-19T22:24:00.000Z",
+            "last_edited_time": "2024-02-19T22:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "342f4577-264b-4783-b7a7-50745fc1fee8"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "fTeP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-13T22:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "~u%3C%5C",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-13T23:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Coming up with customer interview list",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Coming up with customer interview list",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Coming-up-with-customer-interview-list-a86efba2b9a0488d9745ea0e06ee0e13",
+            "public_url": "https://foam-salamander-68d.notion.site/Coming-up-with-customer-interview-list-a86efba2b9a0488d9745ea0e06ee0e13"
+        },
+        {
+            "object": "page",
+            "id": "c0bb91b4-d828-4578-9350-c1a49615ed0e",
+            "created_time": "2024-02-19T22:24:00.000Z",
+            "last_edited_time": "2024-02-19T22:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "342f4577-264b-4783-b7a7-50745fc1fee8"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "fTeP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-13T01:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "~u%3C%5C",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-13T03:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Rhonda Shrader Workshop on Customer Discovery",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Rhonda Shrader Workshop on Customer Discovery",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Rhonda-Shrader-Workshop-on-Customer-Discovery-c0bb91b4d82845789350c1a49615ed0e",
+            "public_url": "https://foam-salamander-68d.notion.site/Rhonda-Shrader-Workshop-on-Customer-Discovery-c0bb91b4d82845789350c1a49615ed0e"
+        },
+        {
+            "object": "page",
+            "id": "55fbcc59-f1d2-4d58-9ee7-e7c8ea48468e",
+            "created_time": "2024-02-19T22:24:00.000Z",
+            "last_edited_time": "2024-02-19T22:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "342f4577-264b-4783-b7a7-50745fc1fee8"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "fTeP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-19T22:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "~u%3C%5C",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-19T23:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Begum Customer Interview",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Begum Customer Interview",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Begum-Customer-Interview-55fbcc59f1d24d589ee7e7c8ea48468e",
+            "public_url": "https://foam-salamander-68d.notion.site/Begum-Customer-Interview-55fbcc59f1d24d589ee7e7c8ea48468e"
+        },
+        {
+            "object": "page",
+            "id": "3f9f3398-c8ce-4e21-abeb-699f7699bb03",
+            "created_time": "2024-02-19T22:24:00.000Z",
+            "last_edited_time": "2024-02-19T22:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "342f4577-264b-4783-b7a7-50745fc1fee8"
+            },
+            "archived": false,
+            "properties": {
+                "Start Time": {
+                    "id": "fTeP",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-19T20:30:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "End Time": {
+                    "id": "~u%3C%5C",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-19T21:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Hai Customer Interview",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Hai Customer Interview",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Hai-Customer-Interview-3f9f3398c8ce4e21abeb699f7699bb03",
+            "public_url": "https://foam-salamander-68d.notion.site/Hai-Customer-Interview-3f9f3398c8ce4e21abeb699f7699bb03"
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "604a6815-357c-496d-bd5d-b4b4d9127fd7"
+}
