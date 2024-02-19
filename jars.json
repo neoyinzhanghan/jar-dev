@@ -100,6 +100,16 @@
                     "page_id": "00d4deee-532c-441a-941b-44482de841d8",
                     "page_public_url": "https://foam-salamander-68d.notion.site/Inspecting-data-collection-outcomes-and-sanity-checking-00d4deee532c441a941b44482de841d8",
                     "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----ld5n5tmmk5a589jksgrbkr1f2c"
+                },
+                {
+                    "page_id": "2ad167c7-6820-4ad6-87ef-cf65b9e1c1f4",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Sanity-check-region-classifier-2ad167c768204ad687efcf65b9e1c1f4",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----ht2sfo850vbd9ophkqrqcijfts"
+                },
+                {
+                    "page_id": "c0f8ed25-8560-41a5-906e-0d2223dc8008",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Retraining-region-classifier-c0f8ed25856041a5906e0d2223dc8008",
+                    "event_id": "c_7b793710e50d11252cb82c8c8c0328b9995abfc0b1dc0176ae00428a97221fdd@group.calendar.google.com-----0id0tnvpm3mdbc3258atqehv94"
                 }
             ]
         },
@@ -236,6 +246,27 @@
                     "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----bi76aoc7no690lcahefbd1bh8o"
                 }
             ]
+        },
+        {
+            "title": "Comp Path SSL",
+            "database_id": "021d8e24-cd70-4a6d-a1c3-debec6719982",
+            "public_url": "https://www.notion.so/021d8e24cd704a6da1c3debec6719982",
+            "calendar_id": "c_307a784934dede245f5b50c917760811358bb37a1b6999ddf522b86330ba4c9a@group.calendar.google.com",
+            "clips": []
+        },
+        {
+            "title": "Mayo Clinic BBD Project",
+            "database_id": "69d2b78e-a3cd-487c-8069-983c6a5d6edb",
+            "public_url": "https://www.notion.so/69d2b78ea3cd487c8069983c6a5d6edb",
+            "calendar_id": "c_11639638dc5eb3afe88b651508713829d0c0cc7cc51b55d571487de70162f0b9@group.calendar.google.com",
+            "clips": []
+        },
+        {
+            "title": "IHC Segmentation Project",
+            "database_id": "e388f134-228e-4fa1-91a6-4e69d180fc9f",
+            "public_url": "https://www.notion.so/e388f134228e4fa191a64e69d180fc9f",
+            "calendar_id": "c_018e39b9d429035b9441542847734a89fdd5ad773b777ca54973dda75d3513e1@group.calendar.google.com",
+            "clips": []
         }
     ],
     "root_id": "8374580cc7b845cea5fbd94a459a913a",
