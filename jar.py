@@ -316,4 +316,4 @@ def get_jar_ledger_as_pd(database_id):
     return df
 
 if __name__ == '__main__':
-    create_jar("IHC Segmentation Project")
+    create_jar("Digital Entertainments")
