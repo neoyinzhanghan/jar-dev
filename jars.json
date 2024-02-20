@@ -244,6 +244,11 @@
                     "page_id": "cfeecb55-1fbe-4042-b739-f4d7954094ff",
                     "page_public_url": "https://foam-salamander-68d.notion.site/Customer-interview-email-template-first-round-cfeecb551fbe4042b739f4d7954094ff",
                     "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----bi76aoc7no690lcahefbd1bh8o"
+                },
+                {
+                    "page_id": "ce509622-0e05-4a8e-866c-63f63837b2c0",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Scheduling-customer-interview-with-mentees-ce5096220e054a8e866c63f63837b2c0",
+                    "event_id": "c_a1adc6614f1d93399b1316b0f8c932dbeb09c83aff536dac1dd8b37a2c1ec0a0@group.calendar.google.com-----rl1e3j6t2c07t9bqdqhdcvf768"
                 }
             ]
         },
@@ -252,14 +257,26 @@
             "database_id": "021d8e24-cd70-4a6d-a1c3-debec6719982",
             "public_url": "https://www.notion.so/021d8e24cd704a6da1c3debec6719982",
             "calendar_id": "c_307a784934dede245f5b50c917760811358bb37a1b6999ddf522b86330ba4c9a@group.calendar.google.com",
-            "clips": []
+            "clips": [
+                {
+                    "page_id": "2281ff3c-7ff1-4386-a2af-ef331f6fb6b3",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Spatial-Metric-Coding-2281ff3c7ff14386a2afef331f6fb6b3",
+                    "event_id": "c_307a784934dede245f5b50c917760811358bb37a1b6999ddf522b86330ba4c9a@group.calendar.google.com-----qdqoe729ja360ansfnte0920gs"
+                }
+            ]
         },
         {
             "title": "Mayo Clinic BBD Project",
             "database_id": "69d2b78e-a3cd-487c-8069-983c6a5d6edb",
             "public_url": "https://www.notion.so/69d2b78ea3cd487c8069983c6a5d6edb",
             "calendar_id": "c_11639638dc5eb3afe88b651508713829d0c0cc7cc51b55d571487de70162f0b9@group.calendar.google.com",
-            "clips": []
+            "clips": [
+                {
+                    "page_id": "30a401fa-0e18-45a3-8a6a-c89e3d337e4e",
+                    "page_public_url": "https://foam-salamander-68d.notion.site/Starting-resnet-feature-extraction-on-Mayo-clinic-data-30a401fa0e1845a38a6ac89e3d337e4e",
+                    "event_id": "c_11639638dc5eb3afe88b651508713829d0c0cc7cc51b55d571487de70162f0b9@group.calendar.google.com-----f0146dlh0os986a7adpein84ok"
+                }
+            ]
         },
         {
             "title": "IHC Segmentation Project",

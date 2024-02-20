@@ -1,0 +1,76 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "2281ff3c-7ff1-4386-a2af-ef331f6fb6b3",
+            "created_time": "2024-02-20T07:03:00.000Z",
+            "last_edited_time": "2024-02-20T07:03:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "c83264a1-1c18-4e62-b06f-09afb04553ab"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "021d8e24-cd70-4a6d-a1c3-debec6719982"
+            },
+            "archived": false,
+            "properties": {
+                "End Time": {
+                    "id": "%3DLwf",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-21T00:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Start Time": {
+                    "id": "TXqb",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-02-20T22:00:00.000+00:00",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Title": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Spatial Metric Coding",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Spatial Metric Coding",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Spatial-Metric-Coding-2281ff3c7ff14386a2afef331f6fb6b3",
+            "public_url": "https://foam-salamander-68d.notion.site/Spatial-Metric-Coding-2281ff3c7ff14386a2afef331f6fb6b3"
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "6778592f-1067-4c4f-8cd1-8f5c163535a9"
+}
